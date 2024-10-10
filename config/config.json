@@ -1,0 +1,19 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "procurement-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/procurement/ProcurementWebPart.js",
+          "manifest": "./src/webparts/procurement/ProcurementWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "ProcurementWebPartStrings": "lib/webparts/procurement/loc/{locale}.js",
+    "ControlStrings": "node_modules/@pnp/spfx-controls-react/lib/loc/{locale}.js"
+  }
+}

@@ -1,0 +1,90 @@
+import { IProcurementListItems, IProcurementModel } from "./Model/IProcurementModel";
+
+export interface IProcurementState {
+  Phone:string;
+  BlanketPORequest: string;
+  PaymentFrom:string;
+  DateRequired:any;
+  ShipAddress:string;
+  PurchasingEntity:string;
+  PayingEntity:string;
+  OtherAddress:any;
+  IsOtherAddress:boolean;
+  Comments:string;
+  IProcurementModel:any;
+  PreferredVendorOptions:any;
+  PaymentFromOptions:any;
+  ShipAddressOptions:any;
+  PurchasingEntityOptions:any;
+  PayingEntityOptions:any;
+  ManagerApprovalCost:any;
+  HighMngmntApprovalCost:any;
+  HighMngmntApprovalWithVendorsCost:any;
+  IsBtnClicked:boolean;
+  SelectedTabType:string;
+  fileInfos:any;
+  ManagerId:any;
+  filePickerResult:any;
+  Attachments: any;
+  SelectedFiles:any;
+  CurrentUserName:string;
+  HighManagementIds:any;
+  openDialog: boolean,
+  openEditDialog: boolean,
+  selectedProcurement:any;
+  latestComments:string;
+  Manager:string;
+  Creator:string;
+  IsHighManagement:boolean,
+  IsManager:boolean,
+  IsAccountant:boolean,
+  ProcurementItemsToDelete:any;
+  FilesToDelete:any;
+  Status:string;
+  TotalExpense:string,
+  ManagerStatus:string;
+  AllAccoutantIds:any;
+
+  PhoneErrMsg:string;
+  IsPhoneErr:boolean;
+  BlanketPORequestErrMsg:string;
+  IsBlanketPORequestErr:boolean;
+  DateRequiredErrMsg:string;
+  IsDateRequiredErr:boolean;
+  PaymentFormErrMsg:string;
+  IsPaymentFormErr:boolean;
+  ShipAddressErrMsg:string;
+  IsShipAddressErr:boolean;
+  ProcurementDetailErrMsg:string;
+  IsProcurementDetailErr:boolean;
+  AttachmentErrMsg:string;
+  IsAttachmentErr:boolean;
+  AttachmentsCounts:any;
+  AttachmentsVendorNotes:any;
+  MySubmissionItems:IProcurementListItems[];
+  MyPendingItems:IProcurementListItems[];
+  MyApprovedItems:IProcurementListItems[];
+  MyRejectedItems:IProcurementListItems[];
+  MyOrderedPlacedItems:IProcurementListItems[];
+  OrderedDate:any;
+  IsOrderedDateErr:boolean;
+  OrderedDateErrMsg:string;
+  ILogHistoryModel:any;
+  CreatorEmail:string;
+  openInvoiceDialog:boolean;
+  MumbaiAddressDetails:any;
+  IndoreAddressDetails:any;
+  DelhiAddressDetails:any;
+  NoidaAddressDetails:any;
+  OtherAddressDetails:any;
+  //ManagerStatus:string;
+  HighManagementStatus:string;
+  AccountantStatus:string;
+  openStatusBarDialog:boolean;
+  HighManagement:string;
+  Accountant:string;
+  RequestorResponse:string;
+  ManagerResponse:string;
+  HighManagementResponse:string;
+  AccountantResponse:string;
+}

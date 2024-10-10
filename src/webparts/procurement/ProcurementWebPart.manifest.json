@@ -1,0 +1,26 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "d8ab06ea-2a9a-4491-b202-35b2f9c752f5",
+  "alias": "ProcurementWebPart",
+  "componentType": "WebPart",
+
+
+  "version": "*",
+  "manifestVersion": 2,
+
+  
+  "requiresCustomScript": false,
+  "supportedHosts": ["SharePointWebPart"],
+  "supportsFullBleed": true,
+
+  "preconfiguredEntries": [{
+    "groupId": "5c03119e-3074-46fd-976b-c60198311f70", 
+    "group": { "default": "Other" },
+    "title": { "default": "Procurement" },
+    "description": { "default": "Procurement description" },
+    "officeFabricIconFontName": "Page",
+    "properties": {
+      "description": "Procurement"
+    }
+  }]
+}
